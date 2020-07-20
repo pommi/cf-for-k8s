@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "schema.json",
+    "description": "basic schema from z-schema benchmark (https://github.com/zaggino/z-schema)",
+    "title": "Operator interface",
+    "type": "object",
+    "additionalProperties": false,
+    "properties" : {
+	    "system_domain": {
+		    "type": "string"
+	    },
+	    "app_domains": {
+		    "type": "array",
+		    "items": {
+			    "type": "string"
+		    }
+	    },
+	    "app_registry": {
+		    "type": "object",
+		    "properties": {
+			    "hostname": {
+				    "type": "string"
+			    },
+			    "repository_prefix": {
+				    "type": "string"
+			    },
+			    "username": {
+				    "type": "string"
+			    },
+			    "password": {
+				    "type": "string"
+			    }
+		    }
+
+	    }
+    }
+
+}
