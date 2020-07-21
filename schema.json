@@ -5,34 +5,49 @@
     "title": "Operator interface",
     "type": "object",
     "additionalProperties": false,
+    "required": ["version", "system_domain", "app_domains", "app_registry"],
     "properties" : {
-	    "system_domain": {
-		    "type": "string"
-	    },
-	    "app_domains": {
-		    "type": "array",
-		    "items": {
-			    "type": "string"
-		    }
-	    },
-	    "app_registry": {
-		    "type": "object",
-		    "properties": {
-			    "hostname": {
-				    "type": "string"
-			    },
-			    "repository_prefix": {
-				    "type": "string"
-			    },
-			    "username": {
-				    "type": "string"
-			    },
-			    "password": {
-				    "type": "string"
-			    }
-		    }
-
+	"version": {
+	    "type": "object",
+	    "properties": {
+		"major": {
+		    "type": "number"
+		},
+		"minor": {
+		    "type": "number"
+		},
+		"patch": {
+		    "type": "number"
+		}
 	    }
+	},
+	"system_domain": {
+	    "type": "string"
+	},
+	"app_domains": {
+	    "type": "array",
+	    "items": {
+		"type": "string"
+	    }
+	},
+	"app_registry": {
+	    "type": "object",
+	    "properties": {
+		"hostname": {
+		    "type": "string"
+		},
+		"repository_prefix": {
+		    "type": "string"
+		},
+		"username": {
+		    "type": "string"
+		},
+		"password": {
+		    "type": "string"
+		}
+	    }
+
+	}
     }
 
 }
