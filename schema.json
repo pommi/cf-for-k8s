@@ -38,6 +38,9 @@
 		}
 	    }
 
+	},
+	"istio_static_ip": {
+	    "type": "string"
 	}
     }
 
