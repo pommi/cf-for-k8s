@@ -1,14 +1,9 @@
 #@data/values
 ---
 
-version:
-  major: 0
-  minor: 4
-  patch: 0
-
 #! Used by any component that has an external interface. It is used for traffic to system components of CF.
 #! - usually you'll want to configure a DNS entry for *.<system_domain> to point to the cluster's external load balancer
-#system_domain: system.cf.example.com
+system_domain: system.cf.example.com
 
 #! The root domains used for apps that are pushed to CF.
 #! - you can use the same domain for system and apps if desired
