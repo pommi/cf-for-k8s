@@ -3,5 +3,6 @@
 **/.terraform/
 **/*.tfvars
 tmp
+kustomize/cf-for-k8s-rendered.yml
 
 .idea

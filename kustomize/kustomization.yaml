@@ -1,0 +1,2 @@
+resources:
+- cf-for-k8s-rendered.yml
