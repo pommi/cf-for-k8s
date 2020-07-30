@@ -274,5 +274,6 @@ You can delete the cf-for-k8s deployment by running the following command.
 ## Additional resources
 Use the following resources to enable additional features in cf-for-k8s.
 
+- [Setup an external database](platform_operators/external-databases.md)
 - [Setup ingress certs with letsencrypt](platform_operators/setup-ingress-certs-with-letsencrypt.md)
 - [Setup static loadbalancer IP](platform_operators/setup-static-loadbalancer-ip.md)
