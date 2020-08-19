@@ -29,13 +29,14 @@ directories:
     path: .
   path: config/uaa/_ytt_lib/uaa
 - contents:
+  - githubRelease:
+      url: https://api.github.com/repos/pivotal/kpack/releases/29866417
+    path: .
+  path: config/kpack/_ytt_lib/kpack
+- contents:
   - manual: {}
     path: eirini
   path: config/eirini/_ytt_lib
-- contents:
-  - manual: {}
-    path: kpack
-  path: config/kpack/_ytt_lib
 - contents:
   - manual: {}
     path: minio
