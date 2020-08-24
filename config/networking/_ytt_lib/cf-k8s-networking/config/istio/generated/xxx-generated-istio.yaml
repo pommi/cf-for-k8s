@@ -5445,6 +5445,13 @@ spec:
           value: Kubernetes
         image: gcr.io/cf-routing/proxyv2@sha256:4e4d05059e65080b158a347bcfac67090968e96f302dea54c0efac9a16ef62f0
         name: istio-proxy
+        lifecycle:
+          preStop:
+            exec:
+              command:
+              - /bin/bash
+              - -c
+              - sleep 20
         ports:
         - containerPort: 15021
         - containerPort: 8080
