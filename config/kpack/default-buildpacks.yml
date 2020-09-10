@@ -37,8 +37,12 @@ metadata:
 spec:
   tag: #@ "{}/cf-default-builder".format(data.values.app_registry.repository_prefix)
   serviceAccount: cc-kpack-registry-service-account
-  stack: cflinuxfs3-stack
-  store: cf-buildpack-store
+  stack:
+    name: cflinuxfs3-stack
+    kind: ClusterStack
+  store:
+    name: cf-buildpack-store
+    kind: ClusterStore
   order:
   - group:
     - id: paketo-community/ruby
