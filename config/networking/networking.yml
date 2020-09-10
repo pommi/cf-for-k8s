@@ -5,6 +5,8 @@
 #@ def networking_values():
 systemNamespace: #@ data.values.system_namespace
 workloadsNamespace: #@ data.values.workloads_namespace
+istiod:
+  replicas: #@ data.values.istiod.replicas
 #@ end
 
 #@ networking = library.get("cf-k8s-networking")

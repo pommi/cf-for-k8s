@@ -105,6 +105,15 @@ cf-for-k8s can be configured to [use an external blobstore](platform_operators/e
    1. Generate certificates for the above domains and paste them in `crt`, `key`, `ca` values
       - **IMPORTANT** Your certificates must include a subject alternative name entry for the internal `*.cf-system.svc.cluster.local` domain in addition to your chosen external domain.
 
+1. Manually configure values
+
+  For production deployments, add the following lines to ensure high
+  availability of the networking control plane:
+  ```
+  istiod:
+    replicas: 2
+  ```
+
 1. To enable Cloud Native buildpacks feature, configure access to an external registry in `cf-values.yml`:
 
    You can choose any of the cloud provider container registries, such as [hub.docker.com](https://hub.docker.com/), [Google container registry](https://cloud.google.com/container-registry), [Azure container registry](https://azure.microsoft.com/en-us/services/container-registry/) and so on. Below are examples for dockerhub or google container registry.
