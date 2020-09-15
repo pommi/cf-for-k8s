@@ -11,6 +11,7 @@ cf_admin_password:
 #! reserved static ip for istio LoadBalancer
 istio_static_ip: ""
 
+#! for highly available deployments, increase to 2
 istiod:
   replicas: 1
 
